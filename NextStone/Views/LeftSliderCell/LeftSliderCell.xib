@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular_5.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftSliderCell" rowHeight="50" id="KGk-i7-Jjw" customClass="LeftSliderCell" customModule="NextStone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-vo-q1X">
+                        <rect key="frame" x="0.0" y="5" width="525" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="material" translatesAutoresizingMaskIntoConstraints="NO" id="gXj-cz-EwZ">
+                                <rect key="frame" x="10" y="12" width="16" height="16"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYw-cW-kB6">
+                                <rect key="frame" x="36" y="12" width="34.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="H52-yb-XkC"/>
+                            <constraint firstItem="gXj-cz-EwZ" firstAttribute="centerY" secondItem="T5A-vo-q1X" secondAttribute="centerY" id="KvW-5d-EMQ"/>
+                            <constraint firstItem="xYw-cW-kB6" firstAttribute="centerY" secondItem="gXj-cz-EwZ" secondAttribute="centerY" id="RGd-jY-ndF"/>
+                            <constraint firstItem="xYw-cW-kB6" firstAttribute="leading" secondItem="gXj-cz-EwZ" secondAttribute="trailing" constant="10" id="dK6-GW-NuF"/>
+                            <constraint firstItem="gXj-cz-EwZ" firstAttribute="leading" secondItem="T5A-vo-q1X" secondAttribute="leading" constant="10" id="s0V-At-tf7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="T5A-vo-q1X" secondAttribute="trailing" id="Fbw-9e-vrX"/>
+                    <constraint firstAttribute="bottom" secondItem="T5A-vo-q1X" secondAttribute="bottom" constant="5" id="IEF-av-Gdx"/>
+                    <constraint firstItem="T5A-vo-q1X" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Yfc-Ex-pSC"/>
+                    <constraint firstItem="T5A-vo-q1X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="efZ-81-Kih"/>
+                    <constraint firstItem="T5A-vo-q1X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hHu-tD-3Kf"/>
+                    <constraint firstItem="T5A-vo-q1X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vXZ-n3-glt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="T5A-vo-q1X" id="5vu-ix-eig"/>
+                <outlet property="cellImageView" destination="gXj-cz-EwZ" id="Xza-Ic-RQA"/>
+                <outlet property="cellLabel" destination="xYw-cW-kB6" id="aCK-dk-i6H"/>
+            </connections>
+            <point key="canvasLocation" x="127.5" y="55"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="material" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular_5.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WrappingDoorFooter" customModule="NextStone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="577" height="334"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-Eh-IRc">
+                    <rect key="frame" x="0.0" y="284" width="577" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGe-SP-Hgn">
+                            <rect key="frame" x="263.5" y="0.0" width="50" height="40"/>
+                            <color key="backgroundColor" red="0.3921568627" green="0.51764705879999995" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="agH-DS-zxO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gGe-SP-Hgn" firstAttribute="top" secondItem="q7o-Eh-IRc" secondAttribute="top" id="5bZ-BY-cen"/>
+                        <constraint firstItem="gGe-SP-Hgn" firstAttribute="centerX" secondItem="q7o-Eh-IRc" secondAttribute="centerX" id="cqU-Uj-UBb"/>
+                        <constraint firstAttribute="height" constant="40" id="hLu-Mp-Hzo"/>
+                        <constraint firstAttribute="bottom" secondItem="gGe-SP-Hgn" secondAttribute="bottom" id="tyc-KD-X4Q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIc-db-hOn">
+                    <rect key="frame" x="0.0" y="20" width="577" height="264"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup" translatesAutoresizingMaskIntoConstraints="NO" id="2ug-Vx-u0k">
+                            <rect key="frame" x="196" y="5" width="185" height="254"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2ug-Vx-u0k" firstAttribute="top" secondItem="tIc-db-hOn" secondAttribute="top" constant="5" id="AGr-2b-gJY"/>
+                        <constraint firstItem="2ug-Vx-u0k" firstAttribute="centerX" secondItem="tIc-db-hOn" secondAttribute="centerX" id="BbA-AI-jDK"/>
+                        <constraint firstAttribute="bottom" secondItem="2ug-Vx-u0k" secondAttribute="bottom" constant="5" id="VY2-Ku-gao"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tIc-db-hOn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="7Bq-Ou-8As"/>
+                <constraint firstItem="q7o-Eh-IRc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="B1j-1T-75s"/>
+                <constraint firstItem="tIc-db-hOn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CPu-ks-z5Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tIc-db-hOn" secondAttribute="trailing" id="Coc-Ih-XFV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q7o-Eh-IRc" secondAttribute="trailing" id="aK4-lm-TNc"/>
+                <constraint firstItem="q7o-Eh-IRc" firstAttribute="top" secondItem="tIc-db-hOn" secondAttribute="bottom" id="ooL-7p-sgo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q7o-Eh-IRc" secondAttribute="bottom" constant="10" id="u8y-Os-rWA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dilogimageView" destination="2ug-Vx-u0k" id="Sgy-Ba-kvw"/>
+                <outlet property="nextButton" destination="gGe-SP-Hgn" id="shg-pR-8e8"/>
+            </connections>
+            <point key="canvasLocation" x="128.5" y="-96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup" width="185" height="186"/>
+    </resources>
+</document>

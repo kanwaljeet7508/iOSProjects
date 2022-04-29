@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular_5.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="113" id="KGk-i7-Jjw" customClass="HomeCell" customModule="NextStone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANR-0y-5DW">
+                        <rect key="frame" x="0.0" y="10" width="430" height="92.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-kt-Szy">
+                                <rect key="frame" x="194" y="36.5" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3921568627" green="0.51764705879999995" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gS4-kt-Szy" firstAttribute="centerX" secondItem="ANR-0y-5DW" secondAttribute="centerX" id="w2Z-xE-rnl"/>
+                            <constraint firstItem="gS4-kt-Szy" firstAttribute="centerY" secondItem="ANR-0y-5DW" secondAttribute="centerY" id="wgx-Pm-XvI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ANR-0y-5DW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6cD-la-9i0"/>
+                    <constraint firstItem="ANR-0y-5DW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="INo-YU-c2B"/>
+                    <constraint firstAttribute="bottom" secondItem="ANR-0y-5DW" secondAttribute="bottom" constant="10" id="NK8-pI-hpg"/>
+                    <constraint firstAttribute="trailing" secondItem="ANR-0y-5DW" secondAttribute="trailing" id="QF6-7x-iKa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CellbackgroundView" destination="ANR-0y-5DW" id="bgy-FD-5mR"/>
+                <outlet property="homeCellLabel" destination="gS4-kt-Szy" id="xHW-Np-6pu"/>
+            </connections>
+            <point key="canvasLocation" x="89" y="95.5"/>
+        </tableViewCell>
+    </objects>
+</document>
